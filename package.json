@@ -1,0 +1,29 @@
+{
+  "name": "performancenow",
+  "version": "0.0.0",
+  "description": "Performance now polyfill for old browsers",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yefremov/performancenow.git"
+  },
+  "keywords": [
+    "performance"
+  ],
+  "author": "Anton Yefremov <anton.yefremov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yefremov/performancenow/issues"
+  },
+  "homepage": "https://github.com/yefremov/performancenow#readme",
+  "dependencies": {
+    "datenow": "^0.0.0"
+  },
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  }
+}

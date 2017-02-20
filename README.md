@@ -30,8 +30,10 @@ let timestamp = now();
 To polyfill `performance.now()` function.
 
 ```js
-performance = performance || {};
-performance.now = performance.now || require('performancenow');
+(function (global) {
+  global.performance = global.performance || {};
+  global.performance.now = global.performance.now || require('performancenow');
+}).call(this);
 ```
 
 ## Running tests

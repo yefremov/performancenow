@@ -1,5 +1,7 @@
 # performancenow
 
+[![Build Status](https://travis-ci.org/yefremov/performancenow.svg?branch=master)](https://travis-ci.org/yefremov/performancenow)
+
 Simple `performance.now()` polyfill for old browsers and node.
 
 ## Installation

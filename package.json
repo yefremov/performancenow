@@ -4,7 +4,9 @@
   "description": "Performance now polyfill for old browsers",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js | tap-spec"
+    "test": "tape test.js | tap-spec",
+    "test-cov": "nyc npm test",
+    "report-cov": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "datenow": "^0.0.0"
   },
   "devDependencies": {
+    "coveralls": "^2.11.16",
+    "nyc": "^10.1.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
   }

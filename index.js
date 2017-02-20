@@ -3,15 +3,19 @@
  * Module dependencies.
  */
 
-var now = require('datenow');
+var datenow = require('datenow');
+
+/**
+ * Expose `performancenow`.
+ */
 
 module.exports =
   typeof performance !== 'undefined' && typeof performance.now === "function"
-    ? function () {
+    ? function performancenow() {
       return performance.now()
     }
     : (function (offset) {
-      return function () {
-        return now() - offset;
+      return function performancenow() {
+        return datenow() - offset;
       }
-    }(now()));
+    }(datenow()));

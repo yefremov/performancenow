@@ -27,6 +27,13 @@ let timestamp = now();
 // => 15.02
 ```
 
+To polyfill `performance.now()` function.
+
+```js
+performance = performance || {};
+performance.now = performance.now || require('performancenow');
+```
+
 ## Running tests
 
 ```bash

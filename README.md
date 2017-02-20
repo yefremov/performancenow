@@ -2,20 +2,25 @@
 
 Simple `performance.now()` polyfill for old browsers and node.
 
+## Installation
+```bash
+$ npm install performancenow
+```
+
 ## API
-Make sure to import `performanceNow` module in your application entrypoint, it
+Make sure to import `performancenow` module in your application entrypoint, it
 will make a time stamp to measure against on every subsequent call.
 
 ```js
-import 'performanceNow';
+import 'performancenow';
 ```
 
 Then just import as a usual module wherever you need it.
 
 ```js
-import performanceNow from 'performanceNow';
+import now from 'performancenow';
 
-let timeStamp = performanceNow();
+let timestamp = now();
 // => 15.02
 ```
 

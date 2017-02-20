@@ -1,9 +1,9 @@
 var test = require('tape');
-var performanceNow = require('.');
+var performancenow = require('.');
 
-test('performanceNow()', function (t) {
-  t.ok(typeof performanceNow === 'function', 'should be a function');
-  t.ok(typeof performanceNow() === 'number', 'should return a number');
-  t.ok(performanceNow() >= 0, 'should return a positive value');
+test('performancenow()', function (t) {
+  t.ok(typeof performancenow === 'function', 'should be a function');
+  t.ok(typeof performancenow() === 'number', 'should return a number');
+  t.ok(performancenow() >= 0, 'should return a positive value');
   t.end();
 });

@@ -39,7 +39,6 @@ To polyfill `performance.now()` function.
 ## Running tests
 
 ```bash
-$ npm install
 $ npm test
 ```
 
